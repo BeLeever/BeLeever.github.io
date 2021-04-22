@@ -16,7 +16,7 @@ var speed = 1;
 
 var backgroundImage = new Image();
 
-backgroundImage.src = "images/backgroundCompleteLowq.jpg";
+backgroundImage.src = "/images/backgroundCompleteLowq.jpg";
 
 
 var timerId = setInterval("update()", 1000/frames);
