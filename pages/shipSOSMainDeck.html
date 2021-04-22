@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../styles.css">
+        <title>
+            Main Deck
+        </title>
+
+        <script src="commonFunctions.js"></script>
+
+
+        
+    </head>
+
+
+    <body>
+
+        <div class="gameImage">
+            <img src="../images/ShipSOSMainDeck.jpg" height="100%" width=100%>
+        </div>
+
+        <div class="returnButton">
+            <img src="../images/returnIcon.png" height="100%" width=100% onclick="goBack();">
+        </div>
+
+        <div class="popUpText" id="messageBox" onclick="disappearElement();" >
+            You have found some more survivors, you take them back to the ship for treatment and they give you expensive parts! +150 Credits
+        </div>
+
+
+
+        <script>
+
+            window.addEventListener('load', function(event){
+
+            var x = parseInt(sessionStorage.getItem("credit"));
+
+            sessionStorage.setItem("credit", x + 150 );
+
+            });
+        </script>
+
+
+    </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

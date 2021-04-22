@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../styles.css">
+        <title>
+            Main Deck
+        </title>
+
+        <script src="commonFunctions.js"></script>
+
+
+        
+    </head>
+
+
+    <body>
+
+        <div class="gameImage">
+            <img src="../images/ShipRadarStorageBay.jpg" height="100%" width=100%>
+        </div>
+
+        <div class="returnButton">
+            <img src="../images/returnIcon.png" height="100%" width=100% onclick="goBack();">
+        </div>
+
+        <div class="popUpText" id="messageBox" onclick="disappearElement();" >
+            You have found some rare minerals +300 Credits, however you notice there is slowly seeping through the vents...
+        </div>
+
+
+
+        <script>
+
+            window.addEventListener('load', function(event){
+
+                var x = parseInt(sessionStorage.getItem("credit"));
+
+                sessionStorage.setItem("credit", x + 300 );
+
+            });
+
+        </script>
+
+
+    </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

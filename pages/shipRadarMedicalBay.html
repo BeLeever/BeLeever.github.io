@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../styles.css">
+        <title>
+            Medical Bay
+        </title>
+
+        <script src="commonFunctions.js"></script>
+
+
+        
+    </head>
+
+
+    <body>
+
+        <div class="gameImage">
+            <img src="../images/ShipRadarMedicalBay.jpg" height="100%" width=100%>
+        </div>
+
+        <div class="returnButton">
+            <img src="../images/returnIcon.png" height="100%" width=100% onclick="goBack();">
+        </div>
+
+        <div class="popUpText" id="messageBox" onclick="disappearElement();" >
+            You find some some valuable medical supplies +400 credits, however there is a smell of smoke in the air...
+        </div>
+
+
+        <script>
+
+            window.addEventListener('load', function(event){
+
+                var x = parseInt(sessionStorage.getItem("credit"));
+
+                sessionStorage.setItem("credit", x + 400 );
+
+            });
+
+        </script>
+
+
+
+
+    </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
