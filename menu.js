@@ -16,7 +16,7 @@ var speed = 1;
 
 var backgroundImage = new Image();
 
-backgroundImage.src = "./images/backgroundCompleteLowq.jpg";
+backgroundImage.src = "/images/backgroundCompleteLowq.jpg";
 
 
 var timerId = setInterval("update()", 1000/frames);
@@ -82,11 +82,11 @@ function update()
 {
     clear();
     move();
-    if(window.location.pathname == "./index.html")
+    if(window.location.pathname == "/index.html")
     {
         draw();
     }
-    else if (window.location.pathname == "./instructions.html")
+    else if (window.location.pathname == "/instructions.html")
     {
         drawBackgroundInstruction();
 
@@ -103,7 +103,7 @@ function update()
 
 
     }
-    else if(window.location.pathname == "./about.html")
+    else if(window.location.pathname == "/about.html")
     {
         drawBackgroundAbout();
 
@@ -199,7 +199,7 @@ function drawBackgroundAbout()
 
 function checkClick(mouseEvent){
     
-    if (window.location.pathname == "./index.html")
+    if (window.location.pathname == "/index.html")
     {
         for(i = 1; i < buttonX.length; i++){
             if(mouseX > actualButtonX[i] && mouseX < (actualButtonX[i] + buttonWidth[i])){
@@ -214,16 +214,16 @@ function checkClick(mouseEvent){
                     switch(i)
                     {
                         case 1:
-                            window.location = "./pages/game.html";
+                            window.location = "/pages/game.html";
                             break;
     
                         case 2:
-                            window.location = "./pages/instructions.html";
+                            window.location = "/pages/instructions.html";
                             break;
     
                         
                         case 3:
-                            window.location = "./pages/about.html";
+                            window.location = "/pages/about.html";
                             break;
                             
                     
