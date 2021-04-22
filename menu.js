@@ -16,7 +16,7 @@ var speed = 1;
 
 var backgroundImage = new Image();
 
-backgroundImage.src = "C:/Users/Lee/Documents/GitHub/webTechCW2/images/backgroundCompleteLowq.jpg";
+backgroundImage.src = "images/backgroundCompleteLowq.jpg";
 
 
 var timerId = setInterval("update()", 1000/frames);
@@ -82,11 +82,11 @@ function update()
 {
     clear();
     move();
-    if(window.location.pathname == "/C:/Users/Lee/Documents/GitHub/webTechCW2/index.html")
+    if(window.location.pathname == "/index.html")
     {
         draw();
     }
-    else if (window.location.pathname == "/C:/Users/Lee/Documents/GitHub/webTechCW2/pages/instructions.html")
+    else if (window.location.pathname == "/instructions.html")
     {
         drawBackgroundInstruction();
 
@@ -103,7 +103,7 @@ function update()
 
 
     }
-    else if(window.location.pathname == "/C:/Users/Lee/Documents/GitHub/webTechCW2/pages/about.html")
+    else if(window.location.pathname == "/about.html")
     {
         drawBackgroundAbout();
 
@@ -199,7 +199,7 @@ function drawBackgroundAbout()
 
 function checkClick(mouseEvent){
     
-    if (window.location.pathname == "/C:/Users/Lee/Documents/GitHub/webTechCW2/index.html")
+    if (window.location.pathname == "/index.html")
     {
         for(i = 1; i < buttonX.length; i++){
             if(mouseX > actualButtonX[i] && mouseX < (actualButtonX[i] + buttonWidth[i])){
