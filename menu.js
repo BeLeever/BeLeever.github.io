@@ -86,7 +86,7 @@ function update()
     {
         draw();
     }
-    else if (window.location.pathname == "pages/instructions.html")
+    else if (window.location.pathname == "/pages/instructions.html")
     {
         drawBackgroundInstruction();
 
@@ -103,7 +103,7 @@ function update()
 
 
     }
-    else if(window.location.pathname == "pages/about.html")
+    else if(window.location.pathname == "/pages/about.html")
     {
         drawBackgroundAbout();
 
